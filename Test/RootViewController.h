@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UIViewController<UITextFieldDelegate>
+
+@property NSString*url;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *urlTextfield;
+@property (weak, nonatomic) IBOutlet UIWebView *myWeb;
 
 @end

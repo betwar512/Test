@@ -27,6 +27,12 @@
 		20975F3E191413B600B48BD2 /* masterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20975F3D191413B600B48BD2 /* masterViewController.m */; };
 		20975F41191414F800B48BD2 /* Favarouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20975F40191414F800B48BD2 /* Favarouts.m */; };
 		20975F42191414F800B48BD2 /* Favarouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20975F40191414F800B48BD2 /* Favarouts.m */; };
+		20975F8E1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F8C1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg */; };
+		20975F8F1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F8C1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg */; };
+		20975F901915F61B00B48BD2 /* table_view.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F8D1915F61B00B48BD2 /* table_view.jpeg */; };
+		20975F911915F61B00B48BD2 /* table_view.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F8D1915F61B00B48BD2 /* table_view.jpeg */; };
+		20975F931915FB3F00B48BD2 /* table_view2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F921915FB3F00B48BD2 /* table_view2.jpg */; };
+		20975F941915FB3F00B48BD2 /* table_view2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F921915FB3F00B48BD2 /* table_view2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,9 @@
 		20975F3D191413B600B48BD2 /* masterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = masterViewController.m; sourceTree = "<group>"; };
 		20975F3F191414F800B48BD2 /* Favarouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favarouts.h; sourceTree = "<group>"; };
 		20975F40191414F800B48BD2 /* Favarouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favarouts.m; sourceTree = "<group>"; };
+		20975F8C1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg"; sourceTree = "<group>"; };
+		20975F8D1915F61B00B48BD2 /* table_view.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = table_view.jpeg; sourceTree = "<group>"; };
+		20975F921915FB3F00B48BD2 /* table_view2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = table_view2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +149,7 @@
 				20975F3A191413A800B48BD2 /* DetailViewController.m */,
 				20975F3C191413B600B48BD2 /* masterViewController.h */,
 				20975F3D191413B600B48BD2 /* masterViewController.m */,
+				20975F8B1915F61B00B48BD2 /* iphone */,
 				20975F141914133400B48BD2 /* Images.xcassets */,
 				20975F031914133400B48BD2 /* Supporting Files */,
 			);
@@ -173,6 +183,16 @@
 				20975F241914133400B48BD2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20975F8B1915F61B00B48BD2 /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+				20975F8C1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg */,
+				20975F921915FB3F00B48BD2 /* table_view2.jpg */,
+				20975F8D1915F61B00B48BD2 /* table_view.jpeg */,
+			);
+			path = iphone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +271,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20975F931915FB3F00B48BD2 /* table_view2.jpg in Resources */,
+				20975F8E1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg in Resources */,
 				20975F151914133400B48BD2 /* Images.xcassets in Resources */,
 				20975F071914133400B48BD2 /* InfoPlist.strings in Resources */,
 				20975F101914133400B48BD2 /* Main.storyboard in Resources */,
+				20975F901915F61B00B48BD2 /* table_view.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20975F911915F61B00B48BD2 /* table_view.jpeg in Resources */,
+				20975F8F1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg in Resources */,
+				20975F941915FB3F00B48BD2 /* table_view2.jpg in Resources */,
 				20975F261914133400B48BD2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

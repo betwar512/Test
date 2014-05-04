@@ -17,7 +17,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *url;
 @property (weak, nonatomic) IBOutlet UITextField *imageurl;
 
+//getting this from rootViewController
 
+@property NSString * urlRoot;
 
 
 @end

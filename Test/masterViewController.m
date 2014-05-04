@@ -20,6 +20,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        
     }
     return self;
 }
@@ -27,9 +28,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
+    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"table_view2.jpg"]]];
+    
     
     AppDelegate *appDelegate=[UIApplication sharedApplication].delegate;
+    
     self.fetchedFavaroutsArray=[appDelegate getAllFavarouts];
+    
     [self.tableView reloadData];
     
     
@@ -56,13 +62,15 @@
     return 1;
 }
 
+//return number of rows in table
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return self.fetchedFavaroutsArray.count;
 }
 
+//create cell for our table with data
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -70,7 +78,8 @@
     
     // Configure the cell...
     Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:indexPath.row];
-    cell.textLabel.text=[NSString stringWithFormat:@"%@%@%@",favarout.name,favarout.url,favarout.imageUrl];
+    cell.textLabel.text=[NSString stringWithFormat:@"%@",favarout.name];
+    cell.detailTextLabel.text=[NSString stringWithFormat:@"%@",favarout.url];
     
     return cell;
 }

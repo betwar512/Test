@@ -1,3 +1,4 @@
+
 //
 //  DetailViewController.m
 //  Test
@@ -31,6 +32,10 @@
     AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
     //2
     self.managedObjectContext = appDelegate.managedObjectContext;
+    if(self.urlRoot){
+        self.url.text=self.urlRoot;
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning
