@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+
 #import "Favarouts.h"
+#import "DetailViewController.h"
 
 
 @interface masterViewController : UITableViewController
-@property (nonatomic,strong)NSArray*fetchedFavaroutsArray;
-
+@property (nonatomic,strong)NSMutableArray*fetchedFavaroutsArray;
 @end

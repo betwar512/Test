@@ -57,11 +57,12 @@
 }
 
 - (NSString *)applicationDocumentsDirectory {
+    
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
 
 
--(NSArray*)getAllFavarouts{
+-(NSMutableArray*)getAllFavarouts{
 
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     
@@ -72,7 +73,7 @@
     NSError* error;
     
     // Query on managedObjectContext With Generated fetchRequest
-    NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    NSMutableArray *fetchedRecords = [[self.managedObjectContext executeFetchRequest:fetchRequest error:&error]mutableCopy];
     
     // Returning Fetched Records
     return fetchedRecords;
