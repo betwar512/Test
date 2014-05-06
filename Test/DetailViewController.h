@@ -10,16 +10,27 @@
 #import "Favarouts.h"
 #import "AppDelegate.h"
 
-@interface DetailViewController : UIViewController
+@class DetailViewController;
 
+@protocol DetailViewControllerDelegate <NSObject>
+-(void)detaiViewWillDis:(DetailViewController*)DetailViewController;
+
+@end
+
+
+@interface DetailViewController : UIViewController<UITextFieldDelegate>
+@property NSManagedObject *favarout;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextField *url;
 @property (weak, nonatomic) IBOutlet UITextField *imageurl;
+@property (weak, nonatomic) IBOutlet UIImageView *imageVie;
 
 //getting this from rootViewController
 
 @property NSString * urlRoot;
+
+@property id<DetailViewControllerDelegate>delegate;
 
 
 @end

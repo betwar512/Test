@@ -2,7 +2,7 @@
 //  Favarouts.m
 //  Test
 //
-//  Created by Abbi H Safaie on 3/05/2014.
+//  Created by Abbi H Safaie on 6/05/2014.
 //  Copyright (c) 2014 Abbas H Safaie. All rights reserved.
 //
 
@@ -11,8 +11,9 @@
 
 @implementation Favarouts
 
+@dynamic imageUrl;
 @dynamic name;
 @dynamic url;
-@dynamic imageUrl;
+@dynamic image;
 
 @end

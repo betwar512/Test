@@ -25,14 +25,14 @@
 		20975F38191413A100B48BD2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20975F37191413A100B48BD2 /* RootViewController.m */; };
 		20975F3B191413A800B48BD2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20975F3A191413A800B48BD2 /* DetailViewController.m */; };
 		20975F3E191413B600B48BD2 /* masterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20975F3D191413B600B48BD2 /* masterViewController.m */; };
-		20975F41191414F800B48BD2 /* Favarouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20975F40191414F800B48BD2 /* Favarouts.m */; };
-		20975F42191414F800B48BD2 /* Favarouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20975F40191414F800B48BD2 /* Favarouts.m */; };
 		20975F8E1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F8C1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg */; };
 		20975F8F1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F8C1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg */; };
 		20975F901915F61B00B48BD2 /* table_view.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F8D1915F61B00B48BD2 /* table_view.jpeg */; };
 		20975F911915F61B00B48BD2 /* table_view.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F8D1915F61B00B48BD2 /* table_view.jpeg */; };
 		20975F931915FB3F00B48BD2 /* table_view2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F921915FB3F00B48BD2 /* table_view2.jpg */; };
 		20975F941915FB3F00B48BD2 /* table_view2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F921915FB3F00B48BD2 /* table_view2.jpg */; };
+		20EB8F4D191917760035D030 /* Favarouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB8F4C191917760035D030 /* Favarouts.m */; };
+		20EB8F4E191917760035D030 /* Favarouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB8F4C191917760035D030 /* Favarouts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,11 +71,11 @@
 		20975F3A191413A800B48BD2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		20975F3C191413B600B48BD2 /* masterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = masterViewController.h; sourceTree = "<group>"; };
 		20975F3D191413B600B48BD2 /* masterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = masterViewController.m; sourceTree = "<group>"; };
-		20975F3F191414F800B48BD2 /* Favarouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favarouts.h; sourceTree = "<group>"; };
-		20975F40191414F800B48BD2 /* Favarouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favarouts.m; sourceTree = "<group>"; };
 		20975F8C1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg"; sourceTree = "<group>"; };
 		20975F8D1915F61B00B48BD2 /* table_view.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = table_view.jpeg; sourceTree = "<group>"; };
 		20975F921915FB3F00B48BD2 /* table_view2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = table_view2.jpg; sourceTree = "<group>"; };
+		20EB8F4B191917760035D030 /* Favarouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favarouts.h; sourceTree = "<group>"; };
+		20EB8F4C191917760035D030 /* Favarouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favarouts.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +106,8 @@
 		20975EF01914133300B48BD2 = {
 			isa = PBXGroup;
 			children = (
+				20EB8F4B191917760035D030 /* Favarouts.h */,
+				20EB8F4C191917760035D030 /* Favarouts.m */,
 				20975F311914134500B48BD2 /* Model.xcdatamodeld */,
 				20975F021914133400B48BD2 /* Test */,
 				20975F211914133400B48BD2 /* TestTests */,
@@ -139,8 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				20975F0B1914133400B48BD2 /* AppDelegate.h */,
-				20975F3F191414F800B48BD2 /* Favarouts.h */,
-				20975F40191414F800B48BD2 /* Favarouts.m */,
 				20975F0C1914133400B48BD2 /* AppDelegate.m */,
 				20975F0E1914133400B48BD2 /* Main.storyboard */,
 				20975F36191413A100B48BD2 /* RootViewController.h */,
@@ -304,7 +304,7 @@
 				20975F091914133400B48BD2 /* main.m in Sources */,
 				20975F38191413A100B48BD2 /* RootViewController.m in Sources */,
 				20975F331914134500B48BD2 /* Model.xcdatamodeld in Sources */,
-				20975F41191414F800B48BD2 /* Favarouts.m in Sources */,
+				20EB8F4D191917760035D030 /* Favarouts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20975F281914133400B48BD2 /* TestTests.m in Sources */,
-				20975F42191414F800B48BD2 /* Favarouts.m in Sources */,
+				20EB8F4E191917760035D030 /* Favarouts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +510,7 @@
 				20975F2D1914133400B48BD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20975F2E1914133400B48BD2 /* Build configuration list for PBXNativeTarget "TestTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				20975F301914133400B48BD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

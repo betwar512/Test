@@ -13,6 +13,9 @@
 #import "RootViewController.h"
 
 
-@interface masterViewController : UITableViewController
+@interface masterViewController : UITableViewController<DetailViewControllerDelegate>
+
+//our Array
+
 @property (nonatomic,strong)NSMutableArray*fetchedFavaroutsArray;
 @end

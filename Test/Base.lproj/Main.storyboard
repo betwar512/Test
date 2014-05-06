@@ -17,50 +17,59 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fey-VI-3aU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <rect key="frame" x="-3" y="5" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="    webSite name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I96-Lq-KPz">
-                                <rect key="frame" x="66" y="217" width="188" height="30"/>
+                                <rect key="frame" x="79" y="179" width="188" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PHB-eD-Q2E" id="oNF-hP-wDk"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVb-vb-uAz">
-                                <rect key="frame" x="66" y="298" width="188" height="30"/>
+                                <rect key="frame" x="79" y="240" width="188" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PHB-eD-Q2E" id="MfG-np-JEL"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ANd-RK-GD1">
-                                <rect key="frame" x="66" y="378" width="188" height="30"/>
+                                <rect key="frame" x="79" y="301" width="188" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PHB-eD-Q2E" id="8AY-oM-IxD"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="middleTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df8-rk-aoK">
-                                <rect key="frame" x="79" y="188" width="72" height="21"/>
+                                <rect key="frame" x="20" y="184" width="72" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
                                 <color key="textColor" red="0.98930404373884095" green="0.98952673596724761" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRO-4m-keS">
-                                <rect key="frame" x="75" y="269" width="81" height="21"/>
+                                <rect key="frame" x="11" y="249" width="81" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
                                 <color key="textColor" red="0.78223515269316624" green="0.79801360375310737" blue="0.82892763614654541" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="image Url" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5r-q1-SLb">
-                                <rect key="frame" x="75" y="349" width="105" height="21"/>
+                                <rect key="frame" x="4" y="306" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
                                 <color key="textColor" red="0.66011639030000002" green="0.66011639030000002" blue="0.66011639030000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3h-fT-BZz">
-                                <rect key="frame" x="101" y="79" width="112" height="84"/>
+                                <rect key="frame" x="104" y="43" width="112" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -76,6 +85,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageVie" destination="K3h-fT-BZz" id="Sce-je-uQk"/>
                         <outlet property="imageurl" destination="ANd-RK-GD1" id="xeX-0y-yNJ"/>
                         <outlet property="name" destination="I96-Lq-KPz" id="Luc-5q-c3O"/>
                         <outlet property="url" destination="JVb-vb-uAz" id="Wsh-9J-J8e"/>
@@ -188,7 +198,7 @@
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <connections>
                                     <segue destination="vXZ-lx-hvc" kind="push" identifier="cellWay" id="tYU-I9-aIj"/>
-                                    <segue destination="PHB-eD-Q2E" kind="modal" identifier="accessoryWay" trigger="accessoryAction" id="CgR-Jo-G7v"/>
+                                    <segue destination="PHB-eD-Q2E" kind="modal" identifier="accessoryWay" trigger="accessoryAction" modalTransitionStyle="flipHorizontal" id="CgR-Jo-G7v"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

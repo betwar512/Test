@@ -15,6 +15,16 @@
 
 @implementation masterViewController
 
+//protocol method to dissmis viewController
+
+-(void)detaiViewWillDis:(DetailViewController*)DetailViewController{
+
+           [self.tableView reloadData];
+    
+        [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -66,7 +76,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+//number of sections in table Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -83,7 +93,7 @@
     return self.fetchedFavaroutsArray.count;
 }
 
-//create cell for our table with data
+//custome and create  cell for our table with data
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -91,17 +101,15 @@
     
     // Configure the cell...
     Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:indexPath.row];
+
     
-    
-    NSString* imageUrl=favarout.imageUrl;
-    
-    NSURL * imageURL = [NSURL URLWithString:imageUrl];
-    NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
-    UIImage * myImage = [UIImage imageWithData:imageData];
+   //get image data out of our data
+    UIImage * myImage = [UIImage imageWithData:favarout.image];
     
     //    [cell.imageView setImage:myImage];
     cell.imageView.image=myImage;
 
+    //set text for title and suntitle in our cell
     
     cell.textLabel.text=[NSString stringWithFormat:@"%@",favarout.name];
     cell.detailTextLabel.text=[NSString stringWithFormat:@"%@",favarout.url];
@@ -164,18 +172,28 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:[[self.tableView indexPathForSelectedRow]row]];
+    
+    //cell push segue to rootViewController
     
     if ([[segue identifier] isEqualToString:@"cellWay"]) {
         
- Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:[[self.tableView indexPathForSelectedRow]row]];
+ 
         RootViewController*rvc=[segue destinationViewController];
         rvc.url=favarout.url;
     
     
     }
     
+    //accessory model segue
+    
     if ([[segue identifier] isEqualToString:@"accessoryWay"]) {
     
+        DetailViewController* dvc=[segue destinationViewController];
+
+        dvc.favarout=favarout;
+        
+        dvc.delegate=self;
         
         
         
