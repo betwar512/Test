@@ -40,7 +40,7 @@
 {
     [super viewDidLoad];
    
-    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"table_view2.jpg"]]];
+    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"table_view.jpeg"]]];
     
     
     AppDelegate *appDelegate=[UIApplication sharedApplication].delegate;
@@ -91,6 +91,18 @@
     
     // Configure the cell...
     Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:indexPath.row];
+    
+    
+    NSString* imageUrl=favarout.imageUrl;
+    
+    NSURL * imageURL = [NSURL URLWithString:imageUrl];
+    NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
+    UIImage * myImage = [UIImage imageWithData:imageData];
+    
+    //    [cell.imageView setImage:myImage];
+    cell.imageView.image=myImage;
+
+    
     cell.textLabel.text=[NSString stringWithFormat:@"%@",favarout.name];
     cell.detailTextLabel.text=[NSString stringWithFormat:@"%@",favarout.url];
     
@@ -146,15 +158,32 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"cellWay"]) {
+        
+ Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:[[self.tableView indexPathForSelectedRow]row]];
+        RootViewController*rvc=[segue destinationViewController];
+        rvc.urlTextfield.text=favarout.url;
+    
+    
+    }
+    
+    if ([[segue identifier] isEqualToString:@"accessoryWay"]) {
+    
+        
+        
+        
+    }
+    
+    
+
 }
-*/
+
 
 @end

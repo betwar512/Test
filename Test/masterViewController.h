@@ -10,6 +10,7 @@
 
 #import "Favarouts.h"
 #import "DetailViewController.h"
+#import "RootViewController.h"
 
 
 @interface masterViewController : UITableViewController

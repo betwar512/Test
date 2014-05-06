@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pY2-zM-5SV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ybf-Sy-2hK" colorLabel="IBBuiltInLabel-Red">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fey-VI-3aU">
@@ -94,7 +94,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mye-Kf-Ex8">
@@ -102,7 +102,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <webView hidden="YES" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIt-jX-Gs9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="572"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="616"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.1792609198" green="0.1931826951" blue="0.61702806119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.5724305542" green="0.57750142640000002" blue="0.80703922189999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -149,41 +149,47 @@
         <scene sceneID="8VQ-Rs-m0X">
             <objects>
                 <tableViewController id="mih-Mh-Bt1" customClass="masterViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="keA-Qb-Nbc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="71" sectionHeaderHeight="22" sectionFooterHeight="22" id="keA-Qb-Nbc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexColor" red="1" green="0.95153152126248297" blue="0.98491349260966399" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.42539039849999999" green="0.086976034049999998" blue="0.5442849864" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" editingAccessoryType="detailDisclosureButton" textLabel="OdM-aN-Ees" detailTextLabel="3tJ-ZE-OjM" rowHeight="73" style="IBUITableViewCellStyleSubtitle" id="QCD-Ol-w6f">
-                                <rect key="frame" x="0.0" y="86" width="320" height="73"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" showsReorderControl="YES" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="14" reuseIdentifier="cell" editingAccessoryType="detailDisclosureButton" textLabel="OdM-aN-Ees" detailTextLabel="3tJ-ZE-OjM" rowHeight="71" style="IBUITableViewCellStyleSubtitle" id="QCD-Ol-w6f">
+                                <rect key="frame" x="0.0" y="22" width="320" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="top" tableViewCell="QCD-Ol-w6f" id="jNC-re-I8t">
-                                    <rect key="frame" x="0.0" y="0.0" width="253" height="73"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="253" height="71"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="OdM-aN-Ees">
-                                            <rect key="frame" x="15" y="17" width="37" height="24"/>
+                                            <rect key="frame" x="29" y="16" width="37" height="24"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" id="3tJ-ZE-OjM">
-                                            <rect key="frame" x="15" y="41" width="46" height="16"/>
+                                            <rect key="frame" x="29" y="40" width="46" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" red="0.89920071710000005" green="0.9259292375" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.12775564649999999" green="0.13549433459999999" blue="0.1495137117" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="tintColor" red="0.98268664360000002" green="1" blue="0.2182931645" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.1054952829" green="0.1136882656" blue="0.36312181119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="cellWay" id="tYU-I9-aIj"/>
+                                    <segue destination="PHB-eD-Q2E" kind="modal" identifier="accessoryWay" trigger="accessoryAction" id="CgR-Jo-G7v"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -232,6 +238,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="tYU-I9-aIj"/>
         <segue reference="30F-MZ-Ggb"/>
+        <segue reference="CgR-Jo-G7v"/>
     </inferredMetricsTieBreakers>
 </document>
