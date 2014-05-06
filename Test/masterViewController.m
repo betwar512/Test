@@ -169,7 +169,7 @@
         
  Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:[[self.tableView indexPathForSelectedRow]row]];
         RootViewController*rvc=[segue destinationViewController];
-        rvc.urlTextfield.text=favarout.url;
+        rvc.url=favarout.url;
     
     
     }

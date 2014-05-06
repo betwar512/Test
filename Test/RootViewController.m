@@ -12,9 +12,10 @@
 @interface RootViewController ()
 
 
-
-
 @end
+
+
+
 
 @implementation RootViewController
 
@@ -30,16 +31,42 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+    
+    if(self.url.length!=0){
+    
+        
+        self.urlTextfield.text=self.url;
+        
+        dispatch_queue_t background= dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0);
+        
+        //set our url entry from textField as string to create NSURL
+        
+        NSString*urlAdress=[NSString stringWithFormat:@"https://%@",self.url];
+        
+        //  NSString*urlAdress=urlInCom;
+        
+        NSURL *url=[NSURL URLWithString:urlAdress];
+        dispatch_async(background,^{
+            
+            
+            NSURLRequest*request=[NSURLRequest requestWithURL:url];
+            //load to web view
+            dispatch_sync(dispatch_get_main_queue(), ^{
 
-- (void)didReceiveMemoryWarning
-{
+                self.myWeb.hidden=NO;
+                
+                [self.myWeb loadRequest:request];
+            });
+        });
+       }
+    }
+
+- (void)didReceiveMemoryWarning{
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    
-    
 }
+
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     self.myWeb.hidden=NO;

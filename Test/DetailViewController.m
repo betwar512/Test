@@ -32,6 +32,7 @@
     AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
     //2
     self.managedObjectContext = appDelegate.managedObjectContext;
+    
     if(self.urlRoot){
         self.url.text=self.urlRoot;
         
@@ -54,9 +55,11 @@
         
         Favarouts * newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Favarouts"
                                                           inManagedObjectContext:self.managedObjectContext];
+        
         newEntry.name=self.name.text;
         newEntry.url=self.url.text;
         newEntry.imageUrl=self.imageurl.text;
+        
         
         
         
