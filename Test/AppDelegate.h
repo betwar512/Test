@@ -16,6 +16,8 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator ;
 
+-(void)saveContext;
+
 -(NSMutableArray*)getAllFavarouts;
 
 @end

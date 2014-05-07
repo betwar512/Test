@@ -66,6 +66,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+//create data from our urlImage :D
+
+-(NSData*)imageData{
+
+
+    NSURL* urlCr=[NSURL URLWithString:self.imageurl.text];
+    
+    NSData *data=[[NSData alloc]initWithContentsOfURL:urlCr];
+    
+    UIImage* image=[UIImage imageWithData:data];
+    
+    NSData* imageData=UIImagePNGRepresentation(image);
+
+    return imageData;
+
+}
+
+//textField delegate should return
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [self.favarout setValue:self.name.text forKey:@"name"];
+    [self.favarout setValue:self.url.text forKey:@"url"];
+    [self.favarout setValue:self.imageurl.text forKey:@"imageUrl"];
+    [self.favarout setValue:[self imageData] forKey:@"image"];
+    [self.delegate detaiViewWillDis:self];
+    
+    return YES;
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -74,36 +104,24 @@
     //segue to masterView and save data here in our database
     
     if ([[segue identifier] isEqualToString:@"goTable"]) {
+       
+        //if not empty add newEntry
         
-        Favarouts * newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Favarouts"
-                                                          inManagedObjectContext:self.managedObjectContext];
-        
-        newEntry.name=self.name.text;
-        newEntry.url=self.url.text;
-        newEntry.imageUrl=self.imageurl.text;
-        
-        NSURL* urlCr=[NSURL URLWithString:self.imageurl.text];
-        
-        NSData *data=[[NSData alloc]initWithContentsOfURL:urlCr];
-        
-        UIImage* image=[UIImage imageWithData:data];
-        
-        NSData* imageData=UIImagePNGRepresentation(image);
-        
-        [newEntry setValue:imageData forKey:@"image"];
+        if((self.name.text.length!=0)||(self.url.text.length!=0)) {
+            Favarouts * newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Favarouts"
+                                                                 inManagedObjectContext:self.managedObjectContext];
+            
+            newEntry.name=self.name.text;
+            newEntry.url=self.url.text;
+            newEntry.imageUrl=self.imageurl.text;
+            
+            [newEntry setValue:[self imageData] forKey:@"image"];
+        }
+      
         
     }
 }
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    
-  [self.favarout setValue:self.name.text forKey:@"name"];
-    [self.favarout setValue:self.url.text forKey:@"url"];
-    [self.favarout setValue:self.imageurl.text forKey:@"imageUrl"];
-    
-    [self.delegate detaiViewWillDis:self];
 
-    return YES;
-}
 
 
 

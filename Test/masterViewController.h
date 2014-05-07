@@ -18,4 +18,6 @@
 //our Array
 
 @property (nonatomic,strong)NSMutableArray*fetchedFavaroutsArray;
+
+
 @end

@@ -35,6 +35,8 @@
     return self;
 }
 
+// nsmanagedObject method to return context for edit
+
 - (NSManagedObjectContext *)managedObjectContext
 {
     NSManagedObjectContext *context = nil;
@@ -49,6 +51,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
    
     [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"table_view.jpeg"]]];
     
@@ -60,6 +63,14 @@
 
     
     [self.tableView reloadData];
+    
+    //use notifacation to give last change to save include block to run saveContext method inside appdelegate
+    
+    NSNotificationCenter * center=[NSNotificationCenter defaultCenter];
+    [center addObserverForName:@"saveNow" object:nil queue:nil usingBlock:^(NSNotification *note) {
+          [appDelegate saveContext];
+        
+    }];
     
     
     
@@ -117,17 +128,8 @@
     return cell;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
 // Override to support editing the table view.
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
@@ -165,42 +167,47 @@
     return YES;
 }
 */
+/*-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    
+    [self performSegueWithIdentifier:@"accessoryWay" sender:self];
 
-
+}
+*/
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:[[self.tableView indexPathForSelectedRow]row]];
+
     
-    //cell push segue to rootViewController
+    //cell push model segue to RootViewController
     
     if ([[segue identifier] isEqualToString:@"cellWay"]) {
         
- 
+     Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:[[self.tableView indexPathForSelectedRow]row]];
         RootViewController*rvc=[segue destinationViewController];
         rvc.url=favarout.url;
     
-    
     }
     
-    //accessory model segue
+    //accessory model segue DetailView
     
     if ([[segue identifier] isEqualToString:@"accessoryWay"]) {
-    
+  
+        //get indexPath for selected row
+        
+   NSIndexPath *myIndex = [self.tableView indexPathForCell:sender];
+        
         DetailViewController* dvc=[segue destinationViewController];
-
+        
+     Favarouts*favarout=[self.fetchedFavaroutsArray objectAtIndex:myIndex.row];
+        
         dvc.favarout=favarout;
-        
         dvc.delegate=self;
-        
-        
-        
+    
     }
-    
-    
-
 }
 
 
