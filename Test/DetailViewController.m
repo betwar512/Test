@@ -53,7 +53,9 @@
         //get data from database create image
         
         UIImage * myImage = [UIImage imageWithData:[self.favarout valueForKey:@"image"]];
-        //set image
+        
+        //set image view with style
+        
         self.imageVie.image=myImage;
         
         self.imageVie.layer.cornerRadius = 50.0;
@@ -116,15 +118,15 @@
         if((self.name.text.length!=0)||(self.url.text.length!=0)) {
             Favarouts * newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Favarouts"
                                                                  inManagedObjectContext:self.managedObjectContext];
+            //add object properties
             
             newEntry.name=self.name.text;
             newEntry.url=self.url.text;
             newEntry.imageUrl=self.imageurl.text;
             
             [newEntry setValue:[self imageData] forKey:@"image"];
+            
         }
-      
-        
     }
 }
 

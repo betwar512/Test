@@ -59,9 +59,8 @@
     AppDelegate *appDelegate=[UIApplication sharedApplication].delegate;
     
     self.fetchedFavaroutsArray=[appDelegate getAllFavarouts];
-    
 
-    
+     
     [self.tableView reloadData];
     
     //use notifacation to give last change to save include block to run saveContext method inside appdelegate
@@ -86,6 +85,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 //number of sections in table Table view data source
 

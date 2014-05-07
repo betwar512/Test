@@ -19,5 +19,6 @@
 
 @property (nonatomic,strong)NSMutableArray*fetchedFavaroutsArray;
 
+@property UIImage*myImage;
 
 @end

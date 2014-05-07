@@ -80,7 +80,7 @@
                         <color key="tintColor" red="0.96594769020000004" green="0.87429043340000001" blue="0.21353357919999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="hLx-76-IYd">
-                        <barButtonItem key="backBarButtonItem" title="Browser" id="c8I-WF-5ko"/>
+                        <barButtonItem key="backBarButtonItem" title="Detail" id="c8I-WF-5ko"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="eld-q4-jwJ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MC0-ay-gcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351" y="661"/>
+            <point key="canvasLocation" x="1393" y="553"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -211,11 +211,13 @@
                             <outlet property="delegate" destination="mih-Mh-Bt1" id="wYb-nM-Hyi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Bookmarks" id="nhv-9z-fL1"/>
+                    <navigationItem key="navigationItem" title="Bookmarks" id="nhv-9z-fL1">
+                        <barButtonItem key="backBarButtonItem" title="Bookmarks" id="7Bh-hT-2og"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HA-v5-ktU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1331" y="-497"/>
+            <point key="canvasLocation" x="1367" y="-677"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="byN-PW-Pdt">
@@ -240,7 +242,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hfa-gS-YHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-491" y="98"/>
+            <point key="canvasLocation" x="-264" y="118"/>
         </scene>
     </scenes>
     <resources>

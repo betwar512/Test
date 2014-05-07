@@ -80,6 +80,14 @@
     [fetchRequest setEntity:entity];
     NSError* error;
     
+    //sorting Array Awsome method
+    
+    NSSortDescriptor *srt = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)];
+    
+    [fetchRequest setSortDescriptors:[NSArray arrayWithObject:srt]];
+    
+
+    
     // Query on managedObjectContext With Generated fetchRequest
     NSMutableArray *fetchedRecords = [[self.managedObjectContext executeFetchRequest:fetchRequest error:&error]mutableCopy];
     
