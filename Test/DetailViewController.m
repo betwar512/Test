@@ -56,6 +56,12 @@
         //set image
         self.imageVie.image=myImage;
         
+        self.imageVie.layer.cornerRadius = 50.0;
+        self.imageVie.layer.borderColor = [UIColor blackColor].CGColor;
+        
+        self.imageVie.layer.borderWidth = 1.0;
+        self.imageVie.clipsToBounds = YES;
+        
     
     }
 }

@@ -33,6 +33,10 @@
 		20975F941915FB3F00B48BD2 /* table_view2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20975F921915FB3F00B48BD2 /* table_view2.jpg */; };
 		20EB8F4D191917760035D030 /* Favarouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB8F4C191917760035D030 /* Favarouts.m */; };
 		20EB8F4E191917760035D030 /* Favarouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB8F4C191917760035D030 /* Favarouts.m */; };
+		20EB8F9A191A26A60035D030 /* green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EB8F99191A26A60035D030 /* green.jpg */; };
+		20EB8F9B191A26A60035D030 /* green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EB8F99191A26A60035D030 /* green.jpg */; };
+		20EB8F9D191A28270035D030 /* blueH.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EB8F9C191A28270035D030 /* blueH.jpg */; };
+		20EB8F9E191A28270035D030 /* blueH.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20EB8F9C191A28270035D030 /* blueH.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,8 @@
 		20975F921915FB3F00B48BD2 /* table_view2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = table_view2.jpg; sourceTree = "<group>"; };
 		20EB8F4B191917760035D030 /* Favarouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favarouts.h; sourceTree = "<group>"; };
 		20EB8F4C191917760035D030 /* Favarouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favarouts.m; sourceTree = "<group>"; };
+		20EB8F99191A26A60035D030 /* green.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green.jpg; sourceTree = "<group>"; };
+		20EB8F9C191A28270035D030 /* blueH.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueH.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +194,9 @@
 		20975F8B1915F61B00B48BD2 /* iphone */ = {
 			isa = PBXGroup;
 			children = (
+				20EB8F9C191A28270035D030 /* blueH.jpg */,
 				20975F8C1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg */,
+				20EB8F99191A26A60035D030 /* green.jpg */,
 				20975F921915FB3F00B48BD2 /* table_view2.jpg */,
 				20975F8D1915F61B00B48BD2 /* table_view.jpeg */,
 			);
@@ -271,6 +279,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20EB8F9D191A28270035D030 /* blueH.jpg in Resources */,
+				20EB8F9A191A26A60035D030 /* green.jpg in Resources */,
 				20975F931915FB3F00B48BD2 /* table_view2.jpg in Resources */,
 				20975F8E1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg in Resources */,
 				20975F151914133400B48BD2 /* Images.xcassets in Resources */,
@@ -286,6 +296,8 @@
 			files = (
 				20975F911915F61B00B48BD2 /* table_view.jpeg in Resources */,
 				20975F8F1915F61B00B48BD2 /* best_iphone_wallpaper_backgrounds_iphone_5_pictures_wallpapers_and_backgrounds-22.jpg in Resources */,
+				20EB8F9E191A28270035D030 /* blueH.jpg in Resources */,
+				20EB8F9B191A26A60035D030 /* green.jpg in Resources */,
 				20975F941915FB3F00B48BD2 /* table_view2.jpg in Resources */,
 				20975F261914133400B48BD2 /* InfoPlist.strings in Resources */,
 			);

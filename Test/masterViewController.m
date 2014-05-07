@@ -53,7 +53,7 @@
     [super viewDidLoad];
     
    
-    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"table_view.jpeg"]]];
+    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"blueH.jpg"]]];
     
     
     AppDelegate *appDelegate=[UIApplication sharedApplication].delegate;
